@@ -1,7 +1,7 @@
 from pyrogram import Client,filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.types import Message
-import keeboards
+# import keeboards
 from work_db import  show_all
 import config
 # import buttons
@@ -10,7 +10,7 @@ bot = Client(
     api_id=config.API_ID,
     api_hash=config.API_HASH,
     bot_token=config.BOT_TOKEN,
-    name=""
+    name="блслб"
 )
 
 @bot.on_message(filters=filters.command("start"))
