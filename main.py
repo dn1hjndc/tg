@@ -20,7 +20,9 @@ async def start(client: Client, message: Message):
 
 @bot.on_message(filters=filters.command("input"))
 async def start(client: Client, message: Message):
-    await message.reply(f"статистика - ")
+    quiz = show_all()
+    await message.reply(f"статистика - {quiz}")
+
 
 
 if __name__ == '__main__':
